@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Pseudo Element</title>
+    <style>
+        .para1 {
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+        /*         
+        .para1:first-line {
+            color: red;
+        }
+        
+        .para1::first-letter {
+            color: blue;
+            font-size: 50px;
+        } */
+        
+        .para1::after {
+            content: url("./images/vwl_logo.png");
+        }
+        
+        .para1::before {
+            content: "Paragraf Öncesi";
+        }
+    </style>
+</head>
+
+<body>
+    <p class="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos possimus accusamus deserunt excepturi tempore! Atque nisi explicabo nostrum impedit tempore sapiente dolorem modi debitis dolores porro pariatur eum non natus similique dicta animi eveniet nobis
+        reiciendis cumque illo amet, rerum ullam ratione. Adipisci delectus ipsa, nobis qui suscipit vitae dolorem laborum similique necessitatibus, consequatur aut facere consequuntur dolore rem officia eaque quisquam, maiores provident quod doloribus
+        nesciunt cupiditate esse ipsam facilis! Aspernatur laudantium quos tenetur at, earum nobis incidunt fugit corrupti id perspiciatis. Repellendus recusandae veniam, aliquam officia natus ut voluptas totam sed libero! Assumenda repellat quia officia
+        quas beatae?
+    </p>
+</body>
+
+</html>
